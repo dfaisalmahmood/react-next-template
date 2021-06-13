@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "i18n": "i18next 'pages/**/*.{js,jsx,ts,tsx}'"
   },
   "dependencies": {
     "next": "10.2.3",
@@ -30,6 +31,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "husky": "^6.0.0",
+    "i18next-parser": "^4.2.0",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.1",
     "standard-version": "^9.3.0",
