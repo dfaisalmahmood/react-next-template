@@ -7,10 +7,7 @@
     "build": "next build",
     "start": "next start",
     "prepare": "husky install",
-    "i18n": "i18next 'pages/**/*.{js,jsx,ts,tsx}'",
-    "release": "standard-version",
-    "release-alpha": "standard-version --prerelease alpha",
-    "release-beta": "standard-version --prerelease beta"
+    "i18n": "i18next 'pages/**/*.{js,jsx,ts,tsx}'"
   },
   "dependencies": {
     "next": "10.2.3",
