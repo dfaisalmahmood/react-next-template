@@ -1,16 +1,13 @@
 {
   "name": "react-next-template",
-  "version": "0.1.0",
+  "version": "0.1.1-alpha.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "prepare": "husky install",
-    "i18n": "i18next 'pages/**/*.{js,jsx,ts,tsx}'",
-    "release": "standard-version",
-    "release-alpha": "standard-version --prerelease alpha",
-    "release-beta": "standard-version --prerelease beta"
+    "i18n": "i18next 'pages/**/*.{js,jsx,ts,tsx}'"
   },
   "dependencies": {
     "next": "10.2.3",
