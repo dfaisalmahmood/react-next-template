@@ -3,14 +3,15 @@ import { useTranslation } from "next-i18next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import { GetStaticProps } from "next";
 
-export const getStaticProps = async ({ locale }) => ({
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ["common"])),
+    ...(await serverSideTranslations(locale || "", ["common"])),
   },
 });
 
-export default function Home(props) {
+export default function Home() {
   const { t } = useTranslation("common");
 
   return (

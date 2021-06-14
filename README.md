@@ -38,3 +38,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Deploy on custom server
+
+Use the included Dockerfile and run the following commands (substitue _react-next-template_ with name of app):
+
+```bash
+docker build . -t react-next-template
+docker run -p 3000:3000 react-next-template
+```
